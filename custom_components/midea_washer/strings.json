@@ -1,0 +1,281 @@
+{
+  "title": "Midea Washer (local)",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Find washer",
+        "description": "IP address of the washer. It must have a fixed IP (DHCP reservation).",
+        "data": {
+          "host": "Host"
+        }
+      },
+      "auth": {
+        "title": "Encryption key",
+        "description": "This washer uses protocol V3 and needs a token/key pair, which only the Midea cloud hands out. You can fetch it once with your SmartHome account (not stored), or enter it manually.",
+        "menu_options": {
+          "cloud": "Fetch once from SmartHome cloud",
+          "manual": "Enter token and key"
+        }
+      },
+      "manual": {
+        "title": "Token and key",
+        "data": {
+          "token": "Token",
+          "key": "Key"
+        }
+      },
+      "cloud": {
+        "title": "SmartHome account",
+        "description": "Used once to fetch the key; not stored.",
+        "data": {
+          "username": "E-mail",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "not_found": "No Midea device answered at this address.",
+      "invalid_auth": "Token/key rejected by the washer.",
+      "cloud_login": "SmartHome login failed.",
+      "cloud_error": "Midea cloud error, see log."
+    },
+    "abort": {
+      "not_a_washer": "This Midea device is not a front-load washer (type 0xDB).",
+      "already_configured": "This washer is already configured."
+    }
+  },
+  "entity": {
+    "select": {
+      "program": {
+        "name": "Program",
+        "state": {
+          "cotton": "Cotton",
+          "mix": "Mix",
+          "synthetic": "Synthetic",
+          "jeans": "Jeans",
+          "cold_20": "20°C",
+          "allergy_care": "Allergy Care",
+          "steam_care": "Steam Care",
+          "spin_only": "Spin Only",
+          "rinse_spin": "Rinse & Spin",
+          "wool": "Wool",
+          "bulky": "Bulky",
+          "eco_40_60": "ECO 40-60",
+          "rapid_45": "Rapid 45'",
+          "quick_15": "Quick 15'",
+          "drum_clean": "Drum Clean"
+        }
+      },
+      "temperature": {
+        "name": "Temperature",
+        "state": {
+          "cold": "Cold",
+          "20": "20 °C",
+          "30": "30 °C",
+          "40": "40 °C",
+          "50": "50 °C",
+          "60": "60 °C",
+          "70": "70 °C",
+          "90": "90 °C",
+          "95": "95 °C"
+        }
+      },
+      "spin_speed": {
+        "name": "Spin speed",
+        "state": {
+          "0": "No spin",
+          "400": "400 rpm",
+          "600": "600 rpm",
+          "800": "800 rpm",
+          "1000": "1000 rpm",
+          "1200": "1200 rpm",
+          "1300": "1300 rpm",
+          "1400": "1400 rpm",
+          "1600": "1600 rpm"
+        }
+      },
+      "water_level": {
+        "name": "Water level",
+        "state": {
+          "auto": "Auto",
+          "1": "Level 1",
+          "2": "Level 2",
+          "3": "Level 3",
+          "4": "Level 4"
+        }
+      }
+    },
+    "switch": {
+      "power": {
+        "name": "Power"
+      },
+      "child_lock": {
+        "name": "Child lock"
+      },
+      "pre_wash": {
+        "name": "Pre-wash"
+      },
+      "extra_rinse": {
+        "name": "Extra rinse"
+      },
+      "turbo": {
+        "name": "Turbo"
+      },
+      "silent": {
+        "name": "Mute end signal"
+      }
+    },
+    "button": {
+      "start": {
+        "name": "Start"
+      },
+      "pause": {
+        "name": "Pause"
+      }
+    },
+    "number": {
+      "delay_start": {
+        "name": "Delayed start"
+      }
+    },
+    "sensor": {
+      "state": {
+        "name": "Status",
+        "state": {
+          "off": "Off",
+          "idle": "Idle",
+          "standby": "Ready",
+          "running": "Running",
+          "paused": "Paused",
+          "finished": "Finished",
+          "fault": "Fault",
+          "delayed": "Delayed start"
+        }
+      },
+      "phase": {
+        "name": "Phase",
+        "state": {
+          "none": "None",
+          "weigh": "Weighing",
+          "pre_wash": "Pre-wash",
+          "wash": "Washing",
+          "rinse": "Rinsing",
+          "spin": "Spinning",
+          "high_speed_spin": "High-speed spin",
+          "dry": "Drying"
+        }
+      },
+      "remaining_time": {
+        "name": "Remaining time"
+      },
+      "finish_time": {
+        "name": "Finish time"
+      },
+      "error_code": {
+        "name": "Error code",
+        "state": {
+          "none": "None"
+        }
+      }
+    },
+    "binary_sensor": {
+      "remote_control": {
+        "name": "Remote control enabled"
+      }
+    }
+  },
+  "exceptions": {
+    "not_connected": {
+      "message": "The washer is off or unreachable. It can only be switched on at its panel (it leaves Wi-Fi while off)."
+    },
+    "remote_control_off": {
+      "message": "Remote control is off. Enable it on the washer panel first."
+    },
+    "no_confirmation": {
+      "message": "The washer did not confirm the command."
+    },
+    "busy": {
+      "message": "The program cannot be changed while a cycle is running or paused."
+    },
+    "unknown_model": {
+      "message": "No program table for this washer model."
+    },
+    "option_not_supported": {
+      "message": "'{option}' is not available for the current program."
+    },
+    "value_not_supported": {
+      "message": "Value {value} for '{option}' is not available for this program."
+    },
+    "locked_while_running": {
+      "message": "'{option}' cannot be changed while a cycle is running."
+    },
+    "powered_off": {
+      "message": "The washer is off. Switch it on at its panel first."
+    }
+  },
+  "services": {
+    "run_program": {
+      "name": "Run program",
+      "description": "Turn the washer on, select a program and options, and start it.",
+      "fields": {
+        "program": {
+          "name": "Program",
+          "description": "Program to run."
+        },
+        "temperature": {
+          "name": "Temperature",
+          "description": "Leave empty for the program default."
+        },
+        "spin_speed": {
+          "name": "Spin speed",
+          "description": "Leave empty for the program default."
+        },
+        "water_level": {
+          "name": "Water level",
+          "description": "Leave empty for the program default."
+        },
+        "pre_wash": {
+          "name": "Pre-wash",
+          "description": ""
+        },
+        "extra_rinse": {
+          "name": "Extra rinse",
+          "description": ""
+        },
+        "turbo": {
+          "name": "Turbo",
+          "description": ""
+        },
+        "silent": {
+          "name": "Mute end signal",
+          "description": ""
+        },
+        "delay": {
+          "name": "Delay (minutes)",
+          "description": "Delayed start in minutes, 0 = start now."
+        }
+      }
+    }
+  },
+  "selector": {
+    "program": {
+      "options": {
+        "cotton": "Cotton",
+        "mix": "Mix",
+        "synthetic": "Synthetic",
+        "jeans": "Jeans",
+        "cold_20": "20°C",
+        "allergy_care": "Allergy Care",
+        "steam_care": "Steam Care",
+        "spin_only": "Spin Only",
+        "rinse_spin": "Rinse & Spin",
+        "wool": "Wool",
+        "bulky": "Bulky",
+        "eco_40_60": "ECO 40-60",
+        "rapid_45": "Rapid 45'",
+        "quick_15": "Quick 15'",
+        "drum_clean": "Drum Clean"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Reverse-engineering material: Midea's proprietary plugin/APK, device keys. Never commit.
+research/
+apk/
+tools/
+.venv*/
+__pycache__/
+*.pyc
+dist/

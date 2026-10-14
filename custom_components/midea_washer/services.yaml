@@ -1,0 +1,86 @@
+run_program:
+  target:
+    entity:
+      integration: midea_washer
+      domain: select
+  fields:
+    program:
+      required: true
+      example: cotton
+      selector:
+        select:
+          translation_key: program
+          options:
+            - cotton
+            - mix
+            - synthetic
+            - jeans
+            - cold_20
+            - allergy_care
+            - steam_care
+            - spin_only
+            - rinse_spin
+            - wool
+            - bulky
+            - eco_40_60
+            - rapid_45
+            - quick_15
+            - drum_clean
+    temperature:
+      required: false
+      selector:
+        select:
+          options:
+            - "cold"
+            - "20"
+            - "30"
+            - "40"
+            - "60"
+            - "90"
+    spin_speed:
+      required: false
+      selector:
+        select:
+          options:
+            - "0"
+            - "400"
+            - "600"
+            - "800"
+            - "1000"
+            - "1200"
+            - "1400"
+    water_level:
+      required: false
+      selector:
+        select:
+          options:
+            - "auto"
+            - "1"
+            - "2"
+            - "3"
+            - "4"
+    pre_wash:
+      required: false
+      selector:
+        boolean:
+    extra_rinse:
+      required: false
+      selector:
+        boolean:
+    turbo:
+      required: false
+      selector:
+        boolean:
+    silent:
+      required: false
+      selector:
+        boolean:
+    delay:
+      required: false
+      example: 0
+      selector:
+        number:
+          min: 0
+          max: 1440
+          step: 30
+          unit_of_measurement: min

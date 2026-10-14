@@ -1,0 +1,281 @@
+{
+  "title": "Midea Waschmaschine (lokal)",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Waschmaschine finden",
+        "description": "IP-Adresse der Waschmaschine. Sie braucht eine feste IP (DHCP-Reservierung).",
+        "data": {
+          "host": "Host"
+        }
+      },
+      "auth": {
+        "title": "Schlüssel",
+        "description": "Diese Maschine nutzt Protokoll V3 und braucht Token/Key, die nur die Midea-Cloud ausgibt. Einmalig mit dem SmartHome-Konto abrufen (wird nicht gespeichert) oder manuell eingeben.",
+        "menu_options": {
+          "cloud": "Einmalig aus der SmartHome-Cloud holen",
+          "manual": "Token und Key eingeben"
+        }
+      },
+      "manual": {
+        "title": "Token und Key",
+        "data": {
+          "token": "Token",
+          "key": "Key"
+        }
+      },
+      "cloud": {
+        "title": "SmartHome-Konto",
+        "description": "Wird nur einmal zum Abrufen des Schlüssels genutzt und nicht gespeichert.",
+        "data": {
+          "username": "E-Mail",
+          "password": "Passwort"
+        }
+      }
+    },
+    "error": {
+      "not_found": "Unter dieser Adresse antwortet kein Midea-Gerät.",
+      "invalid_auth": "Token/Key wurden von der Maschine abgelehnt.",
+      "cloud_login": "SmartHome-Anmeldung fehlgeschlagen.",
+      "cloud_error": "Fehler der Midea-Cloud, siehe Log."
+    },
+    "abort": {
+      "not_a_washer": "Dieses Midea-Gerät ist kein Frontlader (Typ 0xDB).",
+      "already_configured": "Diese Waschmaschine ist bereits eingerichtet."
+    }
+  },
+  "entity": {
+    "select": {
+      "program": {
+        "name": "Programm",
+        "state": {
+          "cotton": "Baumwolle",
+          "mix": "Mischwäsche",
+          "synthetic": "Synthetik",
+          "jeans": "Jeans",
+          "cold_20": "20°C",
+          "allergy_care": "Allergy Care",
+          "steam_care": "Steam Care",
+          "spin_only": "Nur Schleudern",
+          "rinse_spin": "Spülen und Dreh",
+          "wool": "Wolle",
+          "bulky": "Bettwäsche",
+          "eco_40_60": "ECO 40-60",
+          "rapid_45": "Kurzwäsche 45'",
+          "quick_15": "Schnellwäsche 15'",
+          "drum_clean": "Trommelreinigung"
+        }
+      },
+      "temperature": {
+        "name": "Temperatur",
+        "state": {
+          "cold": "Kalt",
+          "20": "20 °C",
+          "30": "30 °C",
+          "40": "40 °C",
+          "50": "50 °C",
+          "60": "60 °C",
+          "70": "70 °C",
+          "90": "90 °C",
+          "95": "95 °C"
+        }
+      },
+      "spin_speed": {
+        "name": "Schleuderdrehzahl",
+        "state": {
+          "0": "Kein Schleudern",
+          "400": "400 U/min",
+          "600": "600 U/min",
+          "800": "800 U/min",
+          "1000": "1000 U/min",
+          "1200": "1200 U/min",
+          "1300": "1300 U/min",
+          "1400": "1400 U/min",
+          "1600": "1600 U/min"
+        }
+      },
+      "water_level": {
+        "name": "Wasserstand",
+        "state": {
+          "auto": "Auto",
+          "1": "Stufe 1",
+          "2": "Stufe 2",
+          "3": "Stufe 3",
+          "4": "Stufe 4"
+        }
+      }
+    },
+    "switch": {
+      "power": {
+        "name": "Ein/Aus"
+      },
+      "child_lock": {
+        "name": "Kindersicherung"
+      },
+      "pre_wash": {
+        "name": "Vorwäsche"
+      },
+      "extra_rinse": {
+        "name": "Extra Spülen"
+      },
+      "turbo": {
+        "name": "Turbo"
+      },
+      "silent": {
+        "name": "Endsignal stumm"
+      }
+    },
+    "button": {
+      "start": {
+        "name": "Start"
+      },
+      "pause": {
+        "name": "Pause"
+      }
+    },
+    "number": {
+      "delay_start": {
+        "name": "Startverzögerung"
+      }
+    },
+    "sensor": {
+      "state": {
+        "name": "Status",
+        "state": {
+          "off": "Aus",
+          "idle": "Bereit",
+          "standby": "Bereit",
+          "running": "Läuft",
+          "paused": "Pausiert",
+          "finished": "Fertig",
+          "fault": "Störung",
+          "delayed": "Startverzögerung"
+        }
+      },
+      "phase": {
+        "name": "Phase",
+        "state": {
+          "none": "Keine",
+          "weigh": "Wiegen",
+          "pre_wash": "Vorwäsche",
+          "wash": "Waschen",
+          "rinse": "Spülen",
+          "spin": "Schleudern",
+          "high_speed_spin": "Hochtouriges Schleudern",
+          "dry": "Trocknen"
+        }
+      },
+      "remaining_time": {
+        "name": "Restzeit"
+      },
+      "finish_time": {
+        "name": "Fertig um"
+      },
+      "error_code": {
+        "name": "Fehlercode",
+        "state": {
+          "none": "Keiner"
+        }
+      }
+    },
+    "binary_sensor": {
+      "remote_control": {
+        "name": "Fernsteuerung aktiv"
+      }
+    }
+  },
+  "exceptions": {
+    "not_connected": {
+      "message": "Die Waschmaschine ist aus oder nicht erreichbar. Einschalten geht nur am Bedienfeld (ausgeschaltet ist sie nicht im WLAN)."
+    },
+    "remote_control_off": {
+      "message": "Fernsteuerung ist aus. Bitte zuerst am Bedienfeld der Maschine aktivieren."
+    },
+    "no_confirmation": {
+      "message": "Die Waschmaschine hat den Befehl nicht bestätigt."
+    },
+    "busy": {
+      "message": "Das Programm kann während eines laufenden oder pausierten Waschgangs nicht geändert werden."
+    },
+    "unknown_model": {
+      "message": "Für dieses Modell gibt es keine Programmtabelle."
+    },
+    "option_not_supported": {
+      "message": "'{option}' ist für das aktuelle Programm nicht verfügbar."
+    },
+    "value_not_supported": {
+      "message": "Wert {value} für '{option}' ist für dieses Programm nicht verfügbar."
+    },
+    "locked_while_running": {
+      "message": "'{option}' kann während des Waschgangs nicht geändert werden."
+    },
+    "powered_off": {
+      "message": "Die Maschine ist aus. Zuerst am Bedienfeld einschalten."
+    }
+  },
+  "services": {
+    "run_program": {
+      "name": "Programm starten",
+      "description": "Schaltet die Maschine ein, wählt Programm und Optionen und startet.",
+      "fields": {
+        "program": {
+          "name": "Programm",
+          "description": "Auszuführendes Programm."
+        },
+        "temperature": {
+          "name": "Temperatur",
+          "description": "Leer = Programmstandard."
+        },
+        "spin_speed": {
+          "name": "Schleuderdrehzahl",
+          "description": "Leer = Programmstandard."
+        },
+        "water_level": {
+          "name": "Wasserstand",
+          "description": "Leer = Programmstandard."
+        },
+        "pre_wash": {
+          "name": "Vorwäsche",
+          "description": ""
+        },
+        "extra_rinse": {
+          "name": "Extra Spülen",
+          "description": ""
+        },
+        "turbo": {
+          "name": "Turbo",
+          "description": ""
+        },
+        "silent": {
+          "name": "Endsignal stumm",
+          "description": ""
+        },
+        "delay": {
+          "name": "Verzögerung (Minuten)",
+          "description": "Startverzögerung in Minuten, 0 = sofort."
+        }
+      }
+    }
+  },
+  "selector": {
+    "program": {
+      "options": {
+        "cotton": "Baumwolle",
+        "mix": "Mischwäsche",
+        "synthetic": "Synthetik",
+        "jeans": "Jeans",
+        "cold_20": "20°C",
+        "allergy_care": "Allergy Care",
+        "steam_care": "Steam Care",
+        "spin_only": "Nur Schleudern",
+        "rinse_spin": "Spülen und Dreh",
+        "wool": "Wolle",
+        "bulky": "Bettwäsche",
+        "eco_40_60": "ECO 40-60",
+        "rapid_45": "Kurzwäsche 45'",
+        "quick_15": "Schnellwäsche 15'",
+        "drum_clean": "Trommelreinigung"
+      }
+    }
+  }
+}

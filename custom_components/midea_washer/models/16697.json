@@ -1,0 +1,1201 @@
+{
+ "subtype": 16697,
+ "model_name": "MFL80-U1403B/C14EW-EU(NB)",
+ "locked_while_running": [
+  "pre_wash",
+  "turbo"
+ ],
+ "requires_remote_control": true,
+ "delay_by_minute": true,
+ "programs": [
+  {
+   "value": 0,
+   "slug": "cotton",
+   "name_en": "Cotton",
+   "name_de": "Baumwolle",
+   "default_minutes": 229,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+     ],
+     "labels": [
+      "Cold",
+      "20",
+      "30",
+      "40",
+      "60",
+      "90"
+     ],
+     "default": 4
+    },
+    "water_level": {
+     "values": [
+      5,
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "Auto",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 5
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200",
+      "1400"
+     ],
+     "default": 5
+    },
+    "pre_wash": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "turbo": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 3,
+   "slug": "mix",
+   "name_en": "Mix",
+   "name_de": "Mischwäsche",
+   "default_minutes": 90,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+     ],
+     "labels": [
+      "Cold",
+      "20",
+      "30",
+      "40",
+      "60",
+      "90"
+     ],
+     "default": 4
+    },
+    "water_level": {
+     "values": [
+      5,
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "Auto",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 5
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200",
+      "1400"
+     ],
+     "default": 3
+    },
+    "pre_wash": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "turbo": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 4,
+   "slug": "synthetic",
+   "name_en": "Synthetic",
+   "name_de": "Synthetik",
+   "default_minutes": 207,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "labels": [
+      "Cold",
+      "20",
+      "30",
+      "40",
+      "60"
+     ],
+     "default": 4
+    },
+    "water_level": {
+     "values": [
+      5,
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "Auto",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 5
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200"
+     ],
+     "default": 5
+    },
+    "pre_wash": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "turbo": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 54,
+   "slug": "jeans",
+   "name_en": "Jeans",
+   "name_de": "Jeans",
+   "default_minutes": 106,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+     ],
+     "labels": [
+      "Cold",
+      "20",
+      "30",
+      "40",
+      "60",
+      "90"
+     ],
+     "default": 3
+    },
+    "water_level": {
+     "values": [
+      5,
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "Auto",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 5
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200"
+     ],
+     "default": 4
+    },
+    "pre_wash": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "turbo": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 16,
+   "slug": "cold_20",
+   "name_en": "20°C",
+   "name_de": "20°C",
+   "default_minutes": 61,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2
+     ],
+     "labels": [
+      "Cold",
+      "20"
+     ],
+     "default": 2
+    },
+    "water_level": {
+     "values": [
+      5,
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "Auto",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 5
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200"
+     ],
+     "default": 4
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 110,
+   "slug": "allergy_care",
+   "name_en": "Allergy Care",
+   "name_de": "Allergy Care",
+   "default_minutes": 158,
+   "options": {
+    "temperature": {
+     "values": [
+      4,
+      5,
+      8
+     ],
+     "labels": [
+      "40",
+      "60",
+      "90"
+     ],
+     "default": 5
+    },
+    "water_level": {
+     "values": [
+      4
+     ],
+     "labels": [
+      "4"
+     ],
+     "default": 4
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200"
+     ],
+     "default": 3
+    },
+    "pre_wash": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 109,
+   "slug": "steam_care",
+   "name_en": "Steam Care",
+   "name_de": "Steam Care",
+   "default_minutes": 117,
+   "options": {
+    "temperature": {
+     "values": [
+      4,
+      5,
+      8
+     ],
+     "labels": [
+      "40",
+      "60",
+      "90"
+     ],
+     "default": 4
+    },
+    "water_level": {
+     "values": [
+      4
+     ],
+     "labels": [
+      "4"
+     ],
+     "default": 4
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200",
+      "1400"
+     ],
+     "default": 3
+    },
+    "pre_wash": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 9,
+   "slug": "spin_only",
+   "name_en": "Spin Only",
+   "name_de": "Nur Schleudern",
+   "default_minutes": 12,
+   "options": {
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200",
+      "1400"
+     ],
+     "default": 4
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 10,
+   "slug": "rinse_spin",
+   "name_en": "Rinse & Spin",
+   "name_de": "Spülen und Dreh",
+   "default_minutes": 20,
+   "options": {
+    "water_level": {
+     "values": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 3
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200",
+      "1400"
+     ],
+     "default": 4
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 5,
+   "slug": "wool",
+   "name_en": "Wool",
+   "name_de": "Wolle",
+   "default_minutes": 67,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "Cold",
+      "20",
+      "30",
+      "40"
+     ],
+     "default": 4
+    },
+    "water_level": {
+     "values": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 4
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800"
+     ],
+     "default": 2
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 115,
+   "slug": "bulky",
+   "name_en": "Bulky",
+   "name_de": "Bettwäsche",
+   "default_minutes": 108,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "labels": [
+      "Cold",
+      "20",
+      "30",
+      "40",
+      "60"
+     ],
+     "default": 4
+    },
+    "water_level": {
+     "values": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 3
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200",
+      "1400"
+     ],
+     "default": 4
+    },
+    "pre_wash": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "turbo": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 108,
+   "slug": "eco_40_60",
+   "name_en": "ECO 40-60",
+   "name_de": "ECO 40-60",
+   "default_minutes": 218,
+   "options": {
+    "spin_speed": {
+     "values": [
+      6
+     ],
+     "labels": [
+      "1400"
+     ],
+     "default": 6
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 18,
+   "slug": "rapid_45",
+   "name_en": "Rapid 45'",
+   "name_de": "Kurzwäsche 45'",
+   "default_minutes": 45,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "labels": [
+      "Cold",
+      "20",
+      "30",
+      "40",
+      "60"
+     ],
+     "default": 4
+    },
+    "water_level": {
+     "values": [
+      5,
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "Auto",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 5
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800",
+      "1000",
+      "1200",
+      "1400"
+     ],
+     "default": 3
+    },
+    "pre_wash": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "extra_rinse": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 2,
+   "slug": "quick_15",
+   "name_en": "Quick 15'",
+   "name_de": "Schnellwäsche 15'",
+   "default_minutes": 15,
+   "options": {
+    "temperature": {
+     "values": [
+      1,
+      2,
+      3
+     ],
+     "labels": [
+      "Cold",
+      "20",
+      "30"
+     ],
+     "default": 1
+    },
+    "water_level": {
+     "values": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "default": 1
+    },
+    "spin_speed": {
+     "values": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "labels": [
+      "0",
+      "400",
+      "600",
+      "800"
+     ],
+     "default": 3
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  },
+  {
+   "value": 7,
+   "slug": "drum_clean",
+   "name_en": "Drum Clean",
+   "name_de": "Trommelreinigung",
+   "default_minutes": 78,
+   "options": {
+    "temperature": {
+     "values": [
+      8
+     ],
+     "labels": [
+      "90"
+     ],
+     "default": 8
+    },
+    "silent": {
+     "values": [
+      0,
+      1
+     ],
+     "labels": [
+      "OFF",
+      "ON"
+     ],
+     "default": 0
+    }
+   }
+  }
+ ]
+}
