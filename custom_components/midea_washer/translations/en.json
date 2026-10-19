@@ -201,13 +201,13 @@
       "message": "No program table for this washer model."
     },
     "option_not_supported": {
-      "message": "'{option}' is not available for the current program."
+      "message": "\"{option}\" is not available for the current program."
     },
     "value_not_supported": {
-      "message": "Value {value} for '{option}' is not available for this program."
+      "message": "Value {value} for \"{option}\" is not available for this program."
     },
     "locked_while_running": {
-      "message": "'{option}' cannot be changed while a cycle is running."
+      "message": "\"{option}\" cannot be changed while a cycle is running."
     },
     "powered_off": {
       "message": "The washer is off. Switch it on at its panel first."

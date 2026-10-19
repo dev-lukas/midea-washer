@@ -19,13 +19,25 @@ Built and tested for the MF200W80WB-14AS (model code `38123704`, subtype `16697`
 The cloud is needed exactly once, to get the token/key for the V3 handshake.
 After that, nothing leaves the LAN.
 
-## Install (no HACS needed)
+## Install
 
-1. Copy `custom_components/midea_washer/` to `/config/custom_components/midea_washer/`.
-2. Restart Home Assistant.
-3. Settings → Devices & services → Add integration → "Midea Washer (local)".
-4. Enter the washer's IP (give it a DHCP reservation). Then either fetch the
+Via Marketplace (built into Home Assistant from 2026.11; HACS before that):
+
+1. Add `https://github.com/dev-lukas/midea-washer` as a custom repository,
+   type "Integration".
+2. Download "Midea Washer (local)" and restart Home Assistant.
+
+Or manually: copy `custom_components/midea_washer/` to
+`/config/custom_components/midea_washer/` and restart Home Assistant.
+
+Then set it up:
+
+1. Settings → Devices & services → Add integration → "Midea Washer (local)".
+2. Enter the washer's IP (give it a DHCP reservation). Then either fetch the
    key once with your SmartHome login (it isn't stored) or paste token + key.
+
+Moving a manual install to Marketplace keeps the existing setup and entities:
+the domain stays `midea_washer`, so the download just replaces the files.
 
 If the washer is also set up in midea_ac_lan, remove it there. These
 appliances usually accept only one LAN connection at a time.

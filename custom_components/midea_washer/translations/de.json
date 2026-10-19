@@ -201,13 +201,13 @@
       "message": "Für dieses Modell gibt es keine Programmtabelle."
     },
     "option_not_supported": {
-      "message": "'{option}' ist für das aktuelle Programm nicht verfügbar."
+      "message": "\"{option}\" ist für das aktuelle Programm nicht verfügbar."
     },
     "value_not_supported": {
-      "message": "Wert {value} für '{option}' ist für dieses Programm nicht verfügbar."
+      "message": "Wert {value} für \"{option}\" ist für dieses Programm nicht verfügbar."
     },
     "locked_while_running": {
-      "message": "'{option}' kann während des Waschgangs nicht geändert werden."
+      "message": "\"{option}\" kann während des Waschgangs nicht geändert werden."
     },
     "powered_off": {
       "message": "Die Maschine ist aus. Zuerst am Bedienfeld einschalten."
